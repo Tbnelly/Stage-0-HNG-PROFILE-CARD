@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <section class="background">
+      <article data-testid="test-profile-card" class="container">
+        <div class="box1">
+          <figure>
+            <img
+              src="./images/My Picture.jpg"
+              alt="User Avatar"
+              data-testid="test-user-avatar"
+            />
+          </figure>
+        </div>
+
+        <div class="box2">
+          <header>
+            <h2 data-testid="test-user-name">Oluwatobiloba Bamidele-Nelly</h2>
+          </header>
+
+          <p data-testid="test-user-time">
+            I'm a passionate front-end developer focused on creating clean,
+            responsive, and accessible user experiences on the web.
+          </p>
+
+          <p data-testid="test-user-time" id="current-time"></p>
+
+          <ul data-testid="test-user-social-links" class="social">
+            <li>
+              <a
+                href="http://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-twitter"
+              >
+                <i class="fab fa-twitter"></i><br />
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://github.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+              >
+                <i class="fab fa-github"></i><br />
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://linkedin.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-linkedin"
+              >
+                <i class="fab fa-linkedin"></i><br />
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+
+          <section data-testid="test-user-hobbies" class="hobbies">
+            <h3>Hobbies</h3>
+            <ul>
+              <li>Playing Games</li>
+              <li>Reading Self-growth Books</li>
+            </ul>
+          </section>
+          <section data-testid="test-user-dislikes" class="dislikes">
+            <h3>Dislikes</h3>
+            <ul>
+              <li>Conflicts</li>
+              <li>Poor internet</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </section>
+
+    <script>
+  // Update the time in milliseconds
+   function updateTime() {
+    const now = Date.now();
+    document.getElementById("current-time").textContent = now;
+    document.getElementById("current-time").setAttribute("data-value", now);
+  }
+  updateTime();
+  setInterval(updateTime, 1000); // updates every second
+</script>
+
+  </body>
+</html>
