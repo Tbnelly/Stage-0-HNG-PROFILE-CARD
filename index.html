@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Oluwatobiloba Bamidele-Nelly | Profile Card</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="stylesheet"
@@ -28,7 +28,7 @@
             <h2 data-testid="test-user-name">Oluwatobiloba Bamidele-Nelly</h2>
           </header>
 
-          <p data-testid="test-user-time">
+          <p data-testid="test-user-bio">
             I'm a passionate front-end developer focused on creating clean,
             responsive, and accessible user experiences on the web.
           </p>
@@ -38,35 +38,35 @@
           <ul data-testid="test-user-social-links" class="social">
             <li>
               <a
-                href="http://twitter.com"
+                href="https://www.snapchat.com/add/badboy_nelly?share_id=LCP8QKreBac&locale=en-CA"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="test-user-social-twitter"
               >
-                <i class="fab fa-twitter"></i><br />
-                Twitter
+                <i class="fab fa-snapchat"></i><br />
+                Snapchat
               </a>
             </li>
             <li>
               <a
-                href="http://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="test-user-social-github"
-              >
-                <i class="fab fa-github"></i><br />
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a
-                href="http://linkedin.com"
+                href="https://www.linkedin.com/in/tobiloba-bamidele-nelly-92ba421aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="test-user-social-linkedin"
               >
                 <i class="fab fa-linkedin"></i><br />
                 LinkedIn
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/Tbnelly"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid="test-user-social-github"
+              >
+                <i class="fab fa-github"></i><br />
+                GitHub
               </a>
             </li>
           </ul>
@@ -90,15 +90,13 @@
     </section>
 
     <script>
-  // Update the time in milliseconds
-   function updateTime() {
-    const now = Date.now();
-    document.getElementById("current-time").textContent = now;
-    document.getElementById("current-time").setAttribute("data-value", now);
-  }
-  updateTime();
-  setInterval(updateTime, 1000); // updates every second
-</script>
-
+      function updateTime() {
+        const now = Date.now();
+        document.getElementById("current-time").textContent = now;
+        document.getElementById("current-time").setAttribute("data-value", now);
+      }
+      updateTime();
+      setInterval(updateTime, 1000); // updates every second
+    </script>
   </body>
 </html>
