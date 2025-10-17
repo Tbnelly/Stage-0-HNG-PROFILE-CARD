@@ -71,6 +71,13 @@ p {
   word-wrap: break-word; 
 }
 
+.time-label {
+  color: #FFD700; /* gold */
+  font-weight: 600;
+  margin-right: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
 #current-time {
   font-family: monospace;
   color: #FFD700;
@@ -191,6 +198,10 @@ p {
   p {
     font-size: 14px;
     line-height: 1.6;
+  }
+
+  .time-container {
+    text-align: center;
   }
 
   /* Social icons */
