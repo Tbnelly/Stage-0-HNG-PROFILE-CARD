@@ -47,4 +47,4 @@ It’s a responsive, accessible **Profile Card** built using **HTML, CSS, and Va
    Simply open index.html in your browser.
 
 ## 🚀 Live Demo
-🔗 [View Project on Vercel](https://stage-0-hng-profile-card-jeux.vercel.app/)
+🔗 [View Project on Github Pages](https://tbnelly.github.io/Stage-0-HNG-PROFILE-CARD/)
